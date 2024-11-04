@@ -59,8 +59,7 @@ view computer mario =
         |> image 70 70
         |> move mario.x (b + 76 + mario.y)
     , words (rgb 10 10 10) ("JUMP COUNTER: " ++ String.fromInt (mario.jumps))
-        |> moveX (computer.screen.left + 100)
-        |> moveY (computer.screen.top - 50)
+        |> moveY (computer.screen.top - 100)
     ]
 
 marioSpriteName mario =
